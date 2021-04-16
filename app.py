@@ -15,7 +15,7 @@ def home():
 @app.route("/scrape")
 def scrape():
     mission_scraped = mission_to_mars.mission_scraped()
-    mongo.db.mission_scraped.update({}, mission_scraped, upsert=True)
+    mongo.mission_scraped.update({}, mission_scraped, upsert=True)
 
     return redirect("/")
 
