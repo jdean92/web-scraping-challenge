@@ -4,7 +4,7 @@ import mission_to_mars
 
 app = Flask(__name__)
 
-mongo - MongoClient("mongodb://localhost:27017/scraped")
+mongo = MongoClient("mongodb://localhost:27017/scraped")
 
 
 @app.route("/")
