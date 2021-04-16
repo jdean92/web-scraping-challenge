@@ -77,11 +77,16 @@ def scrape_that():
             #print('Error')
 
     hemisphere_image_urls = []
+    
     for element in image_data:
         if element not in hemisphere_image_urls:
             hemisphere_image_urls.append(element)
         
     hemisphere_image_urls
+
+     browser.quit()
+
+    return title, paragraph, featured_image_url, mars_facts_html, hemisphere_image_urls
 
 
 
