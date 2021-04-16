@@ -75,9 +75,10 @@ def scrape_that():
             image_data.append(hemisphere_dict)
         except TypeError:
             #print('Error')
+             pass
 
     hemisphere_image_urls = []
-    
+
     for element in image_data:
         if element not in hemisphere_image_urls:
             hemisphere_image_urls.append(element)
